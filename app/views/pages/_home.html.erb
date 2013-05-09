@@ -1,8 +1,6 @@
-<% if user_signed_in? %>
-	<h1> Share your latest something!</h1>
-<% else %>	
-	<h1>Welcome to One Month Rails!</h1>
-
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+		<h1>Welcome to something Awesome!</h1>
 	<p>
 		You've found the home page for the
 		<%= link_to "One Month Rails", "http://onemonthrails.com" %>
